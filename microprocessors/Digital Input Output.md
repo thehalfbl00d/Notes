@@ -11,16 +11,16 @@ each pin can be configured to be an input or an output
 
 
 # the CPU
-a microcontroller have multiple i/o ports, this is the not the breadboard.
+a microcontroller have multiple i/o ports, this is the not the breadboard pins but the actual pins on the cpu.
 
-pins(mcu) are divided into gpioa, gpiob .... and there are 15 pins in one gpioa which is a port.
+pins(mcu) are divided into gpioa, gpiob .... and there are 16 pins in one gpioa which is a port.
 gpioa, b , c, d.... are ports
 
 every port is on one memory location, only one.
 one port have 16 pins in STM32L031, one pin can have 2 values, 0 or 1. each port sends one operation at a time.
 
-every port have unique set of registers:
 
+every port have unique set of registers:
 some of them are: 
 1. MODER(mode register)
 --each pin can be set to input, output, analog or alternate function
@@ -33,4 +33,17 @@ some of them are:
 
 3. ODR(Ouput Data Register):
 --same as idr but for output
+
+So output voltage is 3.3v.
+Basically AFR[1] means for pin 1, the property is ....idk
+
+
+# struct 
+-is a datatype
+-can be referenced using a pointer
+-is like a memory block
+-every member is continuous, so if a var address is at 8 the next one will be at 12 (assuming it takes 4 memory bits)
+
+typedef is used to refernce struct without 
+
 
