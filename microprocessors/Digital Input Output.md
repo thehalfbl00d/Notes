@@ -19,4 +19,18 @@ gpioa, b , c, d.... are ports
 every port is on one memory location, only one.
 one port have 16 pins in STM32L031, one pin can have 2 values, 0 or 1. each port sends one operation at a time.
 
-every port have unique set of registers
+every port have unique set of registers:
+
+some of them are: 
+1. MODER(mode register)
+--each pin can be set to input, output, analog or alternate function
+--each pin have 2 bits of storage on MODER, this is the above value
+--example 00, 01, 10, 11
+
+2. IDR(Input Data Register):
+--sets the pin to high or low
+--if a pin set to high receives a high signal it will be an input
+
+3. ODR(Ouput Data Register):
+--same as idr but for output
+
