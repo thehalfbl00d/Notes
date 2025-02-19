@@ -44,6 +44,22 @@ Basically AFR[1] means for pin 1, the property is ....idk
 -is like a memory block
 -every member is continuous, so if a var address is at 8 the next one will be at 12 (assuming it takes 4 memory bits)
 
-typedef is used to refernce struct without 
+typedef is used to refernce struct without the struct keyword
+
+example :
+
+typedef struct person{
+    int age;
+    float height;
+} person;
+
+## Referencing a struct:
+
+define an instance : 
+person p1;
+
+then call that instance:
+p1.age = 3;
+p2.height = 7.1;
 
 
