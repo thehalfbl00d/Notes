@@ -7,3 +7,7 @@ Part 3
 ## ETL (extract transform and load)
 
 ## ELT (extract load transform)
+
+
+## presentation at the end of semester.
+

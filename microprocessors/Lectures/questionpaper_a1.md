@@ -21,5 +21,8 @@ little endians:
 
         if sending data convert it to big endian
     
+## ---------
     1<<(2*4) 
-    so 0000 0000 0000 0001 the 1 is shifter 8 jumps
+    so 0000 0000 0000 0001 the 1 is shifter 8 jumps so it's value is 2^8
+
+## ---------

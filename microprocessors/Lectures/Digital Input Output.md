@@ -63,5 +63,16 @@ p1.age = 3;
 p2.height = 7.1;
 
 
+# bitwise OR
+
+so |= is bitwise or, it performs an or operation and assigns the result to the left variable
+
+- -- - 
+in BSSR Register which is used to turn leds on and orr the lower Range(0-15) is used to turn the lights on and upper range(16-31) to turn the led off.
+- -- -
 
 
+
+```
+
+```
