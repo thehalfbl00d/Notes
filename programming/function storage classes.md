@@ -1,24 +1,19 @@
-# Notes 16 - Simplified
+# Storage classes in C
 
-Here's a simplified version of the key takeaways from Notes 16:
+## Auto Variable
+- all variables created/ declared are auto by default
+- reserved word in C
+- all data in a the variable is freed once the function ends
+- they are also called LOCAL variables because their scope in only inside the function they are declared
 
-*   **Main Idea:** This note covers the main topics discussed in "Notes 16".
-*   **Key Points:**
-    *   Point 1 explained in simpler terms.
-    *   Point 2 explained in simpler terms.
+```auto int num;```
 
-## Functions and Storage Classes Notes
+## Static
+- local variable
+- they retain data, and can be accessed by multiple call
+- ignores the declaration of the variable and takes the previous result as input
 
-Here are some notes on Functions and Storage Classes:
+## Register
+- they have their memory placed inside the cpu
+- they are used as index variable with a loop
 
-### Functions
-
-*   **Definition:** A function is a block of code that performs a specific task.
-*   **Types:**
-    *   **Built-in Functions:**  Predefined functions (e.g., `printf`, `scanf`).
-    *   **User-defined Functions:** Functions created by the programmer.
-*   **Storage Classes:**
-    *   **auto:** (Default) Local to the block in which they are defined.
-    *   **static:**  Retains its value between multiple calls to the function.
-    *   **extern:**  Variable is defined in another file.
-    *   **register:** Suggests to the compiler to store the variable in a register.
