@@ -306,5 +306,34 @@ int mynum = atof(num_string); // mynum os 123.0000
 ```
 
 ## Creating an array of strings 
+- this can be done by creating an array of pointers
+
+```c
+char *months[12] = {"jan","feb","march","april","june","july","august","september","october","November","december"};
+```
+
+# structs
+
+### defining
+```c
+struct student{
+    int marks;              |
+    int id;                 |   Structure Members
+    char name[12];          |
+}
+```
+
+### creating 
+```c
+struct student student1, student2;
+```
+
+### working with them
+```c
+
+student1.id = 1234;
+student1.name = "akshat"; // ❌ as C doesn't allow direct string assignment after declaring
+strcpy (student1.name, "akshat");
+```
 
 
