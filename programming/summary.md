@@ -1,4 +1,4 @@
-# Arrays
+# <center> Arrays</center>
 
 ## syntax
 ```c
@@ -6,7 +6,7 @@ array_data_type array_name[size];
 ```
 - Can only store data of one type.
 
-## Symbolic Names
+## <font color = "red">Symbolic Names</font>
 - Prevents hard coding, declared once at the top.
 
 ```c
@@ -305,6 +305,6 @@ char num_string[4] = "123";
 int mynum = atof(num_string); // mynum os 123.0000
 ```
 
-## Creating an array of strings
+## Creating an array of strings 
 
 
