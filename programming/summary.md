@@ -335,5 +335,3 @@ student1.id = 1234;
 student1.name = "akshat"; // ❌ as C doesn't allow direct string assignment after declaring
 strcpy (student1.name, "akshat");
 ```
-
-
