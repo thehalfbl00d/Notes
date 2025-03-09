@@ -56,40 +56,36 @@ printf("%d", *var1);
 
 - Declaring more than one pointer at a time:
 ```c
-    int *ptr1, *ptr2, *ptr3; ✅
-    int *ptr1, ptr2, ptr3; ❌
+int *ptr1, *ptr2, *ptr3; // ✅
+int *ptr1, ptr2, ptr3;   // ❌
 ```
 
+# Array and Pointers
+`a` is equal to `&a[0]`
+`a + 1` is equal to `&a[1]`
+`a + 2` is equal to `&a[2]`
 
-# Array and Pointers;
-
-a is equal to &a[0]
-a + 1 is equal to &a[1]
-a + 2 is equal to &a[2]
-
-      *(a + 2) is equal to a[2]
+`*(a + 2)` is equal to `a[2]`
 pointer notation     subscript notation
 
 # Dynamic Memory Allocation
 
 ## malloc() function
-allocates continuous block of memory(Bytes) and returns the starting point:
+Allocates a continuous block of memory (Bytes) and returns the starting point:
 ```c
-    pointer = malloc(size);
-    free(pointer); // don't forget to free the pointer to save space
+pointer = malloc(size);
+free(pointer); // Don't forget to free the pointer to save space.
 ```
 
 ## calloc() function
-does it differently:
-- note: initializes everything with 0
+Does it differently:
+- Note: Initializes everything with 0.
 ```c
-    pointer = calloc(number_of_data_items, size_of_each_element);
-
+pointer = calloc(number_of_data_items, size_of_each_element);
 ```
 
 ## realloc() function
-reallocates the memory block:
-
+Reallocates the memory block:
 ```c
-pointer = realloc(pointer, new_size)
+pointer = realloc(pointer, new_size);
 ```
