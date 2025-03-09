@@ -1,4 +1,6 @@
-# Syntax
+# Arrays
+
+## syntax
 ```c
 array_data_type array_name[size];
 ```
@@ -220,9 +222,89 @@ prints string to the terminal / moves the cursor to the next string automaticall
     gets(name);
 ```
 
+this shi deprecated, we use fgets
+```c
+    fgets(name, SIZE-1, stdin);
+```
+
 ### scanf
+this starts tweaking when we put a space, use fgets
 ```c
     char name[21];
     scanf("%s", name);
 ```
+
+## pointer initialization of string
+
+- char greeting[6] =  {'H', 'E', 'L', 'L', 'O', '\0'};
+- char greeting[6] = "Hello";
+
+```c
+char *ptr = "Hello";  // this also puts a null character hence occupying 6 characters
+```
+
+note :
+
+```c 
+char *p = "hi";
+char array[10] = "hi"
+
+p = array; // this is ok as p is a memory address and they are mutable
+array = p  // this is not ok
+```
+
+## String functions
+
+### 1. strlen(string)
+
+- This returns the length of string **excluding** the null character.
+
+### 2. strcpy(destination, source)
+
+- This copies source to destination assuming the destination is bigger than source
+- the source string should be null terminated
+- destination string should be able to hold the source string
+
+### 3. strcat(destination, source)
+
+- concatenates source string to the end of destination string
+- both must be null terminated
+- the destination should be large enough to hold the appended string
+
+### 4. strcmp(string1, string2)
+
+- returns 0 is both the strings are identical
+- both strings should be null terminated
+
+### 5. strchr(string, character)
+
+- returns the first occurence of the character in string
+
+### 6. strncmp (string1, string2, n)
+
+- compares the first n characters of both the strings
+
+### 7. strncpy (destination, source, n)
+
+- copies the first n character of the source to destination
+
+## Converting numeric string to numbers:
+
+```c
+#include <stdlib.h>
+
+char num_string[4] = "123";
+int mynum = atoi(num_string); // mynum is 123
+```
+#### to float
+
+```c
+#include <stdlib.h>
+
+char num_string[4] = "123";
+int mynum = atof(num_string); // mynum os 123.0000
+```
+
+## Creating an array of strings
+
 
