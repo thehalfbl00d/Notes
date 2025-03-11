@@ -323,15 +323,57 @@ struct student{
 }
 ```
 
-### creating 
+### Creating 
 ```c
 struct student student1, student2;
 ```
 
-### working with them
+### Working With Them
 ```c
 
 student1.id = 1234;
 student1.name = "akshat"; // ❌ as C doesn't allow direct string assignment after declaring
 strcpy (student1.name, "akshat");
 ```
+
+## pointers in struct
+
+```C
+
+#include <stdio.h>
+
+struct studentrec{
+    int id,
+    char firstname[10],
+    char secondnames[10],
+    int marks[5]
+}
+
+int main(){
+    struct studentrec student1 = {
+        1234,
+        "joe",
+        "murphy",
+        {1,2,3,4,5};
+    }
+
+    struct sturdent_rec *ptr; // type of data to point at
+    int *ptr2; // same as the one above it
+
+    ptr = &student1
+
+    //the pointer notation
+    printf("%d"), ptr -> id;
+    return 0;
+};
+```
+
+## Arrow Notation (for structs)
+- only works with pointer structs
+```C
+ptr -> id;
+```
+
+Goes to the pointer and then look for id member name.
+
+

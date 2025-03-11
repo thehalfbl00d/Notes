@@ -3,7 +3,7 @@ call stack is just returning loops waiting for a value from the function it call
 recursion repeats code:
 
 power algorithm:
-```
+```py
 def power(x,y):
     if y == 0 or y ==1:
         return 1
@@ -13,7 +13,7 @@ def power(x,y):
 
 fibonnaci series:
 
-```
+```py
 def fibonnaci:
     if x == 0 or x == 1:
         return 1
