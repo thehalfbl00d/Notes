@@ -316,7 +316,7 @@ char *months[12] = {"jan","feb","march","april","june","july","august","septembe
 
 ### defining
 ```c
-struct student{
+struct student{  // student is a structure tag
     int marks;              |
     int id;                 |   Structure Members
     char name[12];          |
@@ -368,12 +368,53 @@ int main(){
 };
 ```
 
-## Arrow Notation (for structs)
-- only works with pointer structs
+## Arrow Notation (for structs)                                     
+- only works with pointer structs         
+- make sure the pointer is pointing
 ```C
 ptr -> id;
+
+for (int i = 0; i < 5; i++){
+    printf("%d", ptr -> marks[i]);
+}
 ```
+
+***Only 4 weeks remaining for exams**
+
 
 Goes to the pointer and then look for id member name.
 
+
+## Passing struct to a function
+
+#### 1. Pass by value
+```C 
+
+#define SIZE 5
+void display(struct student_rec); // you gotta pass the structure tag
+
+
+int main(){
+    display(student1);
+};
+
+void display( struct student student1){
+    //code here
+};
+```
+#### 2. Pass By Reference
+
+```C
+void enter(struct student *); // signature
+
+int main(){
+    enter (&student1);
+}
+
+void enter(struct student *ptr){ // you bring with you the address
+    scanf("%d", &ptr -> id);
+    scanf("%d", & (ptr -> id)); // it takes the ptr -> id as a whole thing therefore you dont need brackets
+    // scanf("%d", &(*ptr).id) //dont do it like this
+}
+```
 
