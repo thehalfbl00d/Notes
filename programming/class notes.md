@@ -418,3 +418,10 @@ void enter(struct student *ptr){ // you bring with you the address
 }
 ```
 
+# Array of Structures
+
+```c
+
+struct student_rec students[5];
+```
+
