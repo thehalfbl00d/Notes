@@ -316,7 +316,8 @@ char *months[12] = {"jan","feb","march","april","june","july","august","septembe
 
 ### defining
 ```c
-struct student{  // student is a structure tag
+struct student
+{  // student is a structure tag
     int marks;              |
     int id;                 |   Structure Members
     char name[12];          |
@@ -336,7 +337,7 @@ student1.name = "akshat"; // ❌ as C doesn't allow direct string assignment aft
 strcpy (student1.name, "akshat");
 ```
 
-## pointers in struct
+## Pointers in struct
 
 ```C
 
@@ -347,7 +348,9 @@ struct studentrec{
     char firstname[10],
     char secondnames[10],
     int marks[5]
-}
+} student2, student3, student4; 
+//defined at the brewery, 
+// never make global variables
 
 int main(){
     struct studentrec student1 = {
@@ -417,11 +420,25 @@ void enter(struct student *ptr){ // you bring with you the address
     // scanf("%d", &(*ptr).id) //dont do it like this
 }
 ```
-
+---
+# Clean from here
+---
 # Array of Structures
 
 ```c
 
 struct student_rec students[5];
+for(int i = 0; i < 5; i++){
+    students[i].student_rec = "hello";
+    //array[i] = *(array + i)
+}
 ```
 
+## Typedef
+
+Means that it will replace char everywhere you want to use it, now you dont have to use char name[10] you just say STRING name[10].
+```c
+typedef char STRING;  // behaves like macro
+STRING name[10]; // acts like a synonym for char
+typedef int* INT_POINTER; // replace the int* by INT_POINTER2
+```
