@@ -29,9 +29,20 @@ def merge(left, right):
             temp.append(left[j])
             j+=1
 
-    temp.extend(left[j:]) # need to understand these
-    temp.extend(right[i:]) # need to understand this too
+    # we are adding these incase there is left on any side, these arrays wont be non-empty at the same time, only one of them will have data in it
+    temp.extend(left[j:]) 
+    temp.extend(right[i:]) 
+
     return temp
+'''
+the merge function is like a situation where there is a bus with one entrance.
+and there are two lines of people
+the condition is, the person nearest to the door on both lines have to filtered based on the height
+the smallest person is allowed each time.
+
+there might be condition where wheither some of them is left in one line but it's not possible that there are left on both lines
+Dont worry about the left overs on each side, they are already sorted :)
+'''
 
         
 
