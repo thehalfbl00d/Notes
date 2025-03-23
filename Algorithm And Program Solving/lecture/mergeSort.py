@@ -30,7 +30,7 @@ def merge(left, right):
             j+=1
 
     temp.extend(left[j:]) # need to understand these
-    temp.extend(right[i:])
+    temp.extend(right[i:]) # need to understand this too
     return temp
 
         
