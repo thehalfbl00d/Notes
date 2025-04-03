@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* define linked list structure.
+ * data part=data
+ * pointer part= *next
+ */
+struct Node {
+  int data;
+  struct Node *next;
+};
+
+void addNode(int new_data);
+void freeNodes();
+
+// declare and initialise module global - the Head pointer
+
+struct Node *headRef=NULL;
+
+/* head_ref points to the start of the list 
+ * adding a node - is easier to place it at the start of the list -
+ * O(1) vs O(N) for putting at the end.
+ */
+void addNode(int new_data)
+{
+    /* 1. allocate space for node */
+    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+  
+    /* 2. put in the data  */
+    new_node->data  = new_data;
+
+    /* 3. adding the node to the top of the list
+     * make it the new head node.
+     *
+     * note, this is not an ordered list.
+     * if it was, there would need to be
+     * a location function which found the place to put
+     * the node.
+     */
+    new_node->next = headRef;
+    headRef = new_node;
+}
+
+/*
+Write your own function to 
+a) populate the list
+b) print it all out
+c) try your hand at some recursive functions for printing.
+*/

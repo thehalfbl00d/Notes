@@ -1,0 +1,90 @@
+=====================================
+OSF1 Week 10: Lab 10 Sample Solutions
+=====================================
+-------------------------
+Question 1a: q1a.bat
+-------------------------
+@ECHO OFF
+IF EXIST test.txt (
+	ECHO File test.txt exists
+	TYPE test.txt
+) ELSE (
+	ECHO File test.txt does not exist
+)
+
+-------------------------
+Question 1b: q1b.bat
+-------------------------
+@ECHO OFF
+IF EXIST %1 (
+	ECHO File %1 exists
+	TYPE %1
+) ELSE (
+	ECHO File %1 does not exist
+)
+
+-------------------------
+Question 2: q2.bat
+-------------------------
+@ECHO OFF
+
+REM Clear the Screen
+CLS
+
+REM Redirect the output from the help command to a file called myhelp.txt
+help > myhelp.txt
+
+REM Use the IF cmd to check if this file exists and if so, 
+REM display its contents on the screen.
+IF EXIST myhelp.txt (
+	ECHO File myhelp.txt exists
+	TYPE myhelp.txt
+) ELSE (
+	ECHO File myhelp.txt does not exist
+)
+
+-------------------------
+Question 3: q3.bat
+-------------------------
+@ECHO OFF
+
+REM Clear the Screen
+CLS
+
+REM Redirect the output from the help command to a file called myhelp.txt
+help > myhelp.txt
+
+REM Use the IF cmd to check if this file exists and if so, 
+REM display its contents on the screen.
+IF EXIST myhelp.txt (
+  GOTO FILEPRESENT
+) ELSE (
+  GOTO FILENOTPRESENT
+)
+
+:FILEPRESENT
+ECHO File myhelp.txt exists
+TYPE myhelp.txt
+ECHO Appending DIR help message to myhelp.txt
+PAUSE
+DIR /? >> myhelp.txt
+TYPE myhelp.txt
+GOTO END
+
+:FILENOTPRESENT
+ECHO File myhelp.txt does not exist
+GOTO END
+
+:END
+
+-------------------------
+Question 4: password.bat
+-------------------------
+@ECHO OFF
+
+IF "%1"=="moonshine" (
+	ECHO PASSSWORD IS CORRECT...STARTING THE APPLICATION..."
+	NOTEPAD
+) ELSE (
+	ECHO WRONG PASSWORD...ENDING
+)

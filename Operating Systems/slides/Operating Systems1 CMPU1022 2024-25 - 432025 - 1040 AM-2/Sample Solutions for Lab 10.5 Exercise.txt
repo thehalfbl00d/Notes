@@ -1,0 +1,61 @@
+REM Save as MyOS.bat
+
+@ECHO OFF
+
+:MENU
+cls
+ECHO Choose an option below and press ENTER
+ECHO #####################################################
+ECHO # 1 = Show the current directory                    # 
+ECHO # 2 = Show the current date and time                # 
+ECHO # 3 = Show the current Operating System Verison     # 
+ECHO # 4 = Find a file in the current directory          # 
+ECHO # 5 = Exit                                          # 
+ECHO #####################################################
+Echo.
+
+SET /P choice= What would you like to do?:
+
+IF "%choice%"=="1" GOTO SHOWDIR
+IF "%choice%"=="2" GOTO SHOWDATE
+IF "%choice%"=="3" GOTO SHOWVER
+IF "%choice%"=="4" GOTO FINDFILE
+IF "%choice%"=="5" GOTO END
+REM if none of the above then invalid!
+ECHO Invalid choice. Please choose from the menu items above
+PAUSE
+GOTO MENU
+
+:SHOWDIR
+DIR
+PAUSE
+GOTO MENU
+
+:SHOWDATE
+DATE /T
+TIME /T
+PAUSE
+GOTO MENU
+
+:SHOWVER
+VER
+PAUSE
+GOTO MENU
+
+:FINDFILE
+SET /P filename= Please enter the name of the file you are searching for:
+IF EXIST  %filename% GOTO FOUND
+ECHO file not found
+PAUSE
+GOTO MENU
+
+:FOUND
+ECHO %filename% found
+PAUSE
+GOTO MENU
+
+:END
+ECHO Have a good day!
+
+
+

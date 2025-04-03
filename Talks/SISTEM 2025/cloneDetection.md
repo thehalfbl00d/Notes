@@ -19,8 +19,8 @@
 - **Accuracy**: Refers to how close a measurement or detection is to the true or actual value. It measures correctness.
 
 ## History
-- Type1/2 are very easily comparable
-- NN good at type3/4 comparision
+- Type 1/2 are very easily comparable.
+- Neural networks (NN) are effective at Type 3/4 comparison.
 
 ### Solution (Phase 1)
 - A BERT-based approach:

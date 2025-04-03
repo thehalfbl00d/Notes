@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html><head></head><body style="color: rgb(32, 33, 34); font-family: verdana, sans-serif; font-size: 12px;"><p id="yui_3_17_2_1_1708131393883_1415">The&nbsp;<strong>ps -l</strong>&nbsp;command (lowercase L) in Linux/Unix shows several columns in the output.&nbsp;&nbsp; For example:</p>
+<p><strong>F S&nbsp; &nbsp;UID&nbsp; &nbsp;PID&nbsp; PPID&nbsp; C PRI&nbsp; NI ADDR SZ WCHAN&nbsp; TTY&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TIME CMD</strong><br>0 S&nbsp; 1000&nbsp; 3520&nbsp; 3516&nbsp; 0&nbsp; 80&nbsp; &nbsp;0 -&nbsp; 3333 do_wai pts/0&nbsp; &nbsp; 00:00:00 bash<br>0 S&nbsp; 1000 16489&nbsp; 3520&nbsp; 0&nbsp; 80&nbsp; &nbsp;0 -&nbsp; 2008 ia32_s pts/0&nbsp; &nbsp; 00:00:00 sleep</p>
+<p></p>
+<p>The second column begins with&nbsp;<strong>S</strong>, which indicates the process state.&nbsp; This column may have the following values (along with their meanings):</p>
+<p></p>
+<pre><code>D Uninterruptible sleep (usually IO)
+R Running or runnable (on run queue)
+S Interruptible sleep (waiting for an event to complete). The process is running in the background.
+T Stopped, either by a job control signal or because it is being traced. The process is suspended.
+W paging (not valid since the 2.6.xx kernel)
+X dead (should never be seen)
+Z Defunct ("zombie") process, terminated but not reaped by its parent.</code></pre>
+<p></p>
+<p></p></body></html>
