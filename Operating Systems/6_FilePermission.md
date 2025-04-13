@@ -1,0 +1,1 @@
+- to read a file from a directory you should have a execute permission on the directory.

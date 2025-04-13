@@ -1,4 +1,4 @@
-# <center> Arrays</center>
+# Arrays
 
 ## syntax
 ```c
@@ -58,10 +58,10 @@ printf("%d", *var1);
 
 - Declaring more than one pointer at a time:
 ```c
-    int *ptr1, *ptr2, *ptr3; ✅
-    int *ptr1, ptr2, ptr3; ❌
+int *ptr1, *ptr2, *ptr3; ✅
+int *ptr1, ptr2, ptr3; ❌
 ```
-
+  
 
 # Array and Pointers;
 
@@ -95,7 +95,6 @@ does it differently:
 - note: initializes everything with 0
 ```c
     pointer = calloc(number_of_data_items, size_of_each_element);
-
 ```
 
 ## realloc() function
@@ -183,11 +182,11 @@ register int x;
 2. A string literal always ends with an NULL character "\0"
 
 To display 
-    " in a string you use   \"
-    ' in a string you use   \'
-    tab in a string you use \t
-    to remove a space       \b
-    to play alert sound     \a
+	" in a string you use   \"
+	' in a string you use   \'
+	tab in a string you use \t
+	to remove a space       \b
+	to play alert sound     \a
 
 Note :
 In C characters are string of characters
@@ -312,7 +311,7 @@ int mynum = atof(num_string); // mynum os 123.0000
 char *months[12] = {"jan","feb","march","april","june","july","august","september","october","November","december"};
 ```
 
-# structs
+# Structs
 
 ### defining
 ```c
@@ -340,7 +339,6 @@ strcpy (student1.name, "akshat");
 ## Pointers in struct
 
 ```C
-
 #include <stdio.h>
 
 struct studentrec{
@@ -387,7 +385,7 @@ for (int i = 0; i < 5; i++){
 
 Goes to the pointer and then look for id member name.
 
-
+---
 ## Passing struct to a function
 
 #### 1. Pass by value
@@ -421,8 +419,6 @@ void enter(struct student *ptr){ // you bring with you the address
 }
 ```
 ---
-# Clean from here
----
 # Array of Structures
 
 ```c
@@ -434,6 +430,7 @@ for(int i = 0; i < 5; i++){
 }
 ```
 
+---
 ## Typedef
 
 Means that it will replace char everywhere you want to use it, now you dont have to use char name[10] you just say STRING name[10].
@@ -442,3 +439,6 @@ typedef char STRING;  // behaves like macro
 STRING name[10]; // acts like a synonym for char
 typedef int* INT_POINTER; // replace the int* by INT_POINTER2
 ```
+
+---
+
