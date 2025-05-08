@@ -25,6 +25,7 @@ Here’s what **USART2** typically has (STM32-style):
 ### This is what it looks like:
 ![[Screenshot 2025-04-20 at 19.36.59.png]]
 
+---
 
 ### **Imagine USART as the**  **"big buff data bouncer"**
 
@@ -37,7 +38,7 @@ Here’s what **USART2** typically has (STM32-style):
 - The bits travel across the line like digital pigeons 🐦.
     
 
----
+
 
 ### **On the other end…**
 
@@ -68,3 +69,7 @@ return (char)USART2->RDR;
 ```
 #### FLAGS (these are the thing used up in the code for condition checking)
 ![[Screenshot 2025-04-20 at 20.19.54.png]]
+
+---
+
+

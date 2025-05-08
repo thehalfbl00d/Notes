@@ -1,8 +1,8 @@
 # OS Types Based On
 
 ## Number of parallel users 
-1. Single user
-2. Multi User
+		1. Single user
+		2. Multi User
 
 ## Operational Cofiguration
 1. standAlone

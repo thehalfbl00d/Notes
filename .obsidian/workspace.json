@@ -8,47 +8,77 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7229e31ca53ccbc4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "microprocessors/Previous Papers/TU856-1_summer_2024_a1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "TU856-1_summer_2024_a1"
-            }
-          },
-          {
-            "id": "65bf71d92a25dd9b",
+            "id": "28a4a2ee76904739",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "microprocessors/notes/STM32F031 (ARM based microcontroller).md",
+                "file": "Computer Architecture/Notes/vonNeumann.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "STM32F031 (ARM based microcontroller)"
+              "title": "vonNeumann"
             }
           },
           {
-            "id": "cc61791758271643",
+            "id": "bd65cf9533af3d09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "microprocessors/notes/Serial Communication.md",
+                "file": "Computer Architecture/Notes/Flip flop vs latches.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Serial Communication"
+              "title": "Flip flop vs latches"
+            }
+          },
+          {
+            "id": "c0558eefa979de02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Architecture/Notes/Bytes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bytes"
+            }
+          },
+          {
+            "id": "cc2a6abc242ba83d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Algos"
+            }
+          },
+          {
+            "id": "af2633832451a99a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer Architecture/Notes/Fleld Effect Transístors.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fleld Effect Transístors"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -105,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "eb167c025c05ab8d",
@@ -195,33 +225,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cc61791758271643",
+  "active": "cc2a6abc242ba83d",
   "lastOpenFiles": [
-    "microprocessors/notes/STM32F031 (ARM based microcontroller).md",
+    "Computer Architecture/Notes/Bytes.md",
+    "Algos.md",
+    "palindrome",
+    "palindrome.c",
+    "Computer Architecture/Notes/Flip flop vs latches.md",
+    "Computer Architecture/Notes/Fleld Effect Transístors.md",
+    "Screenshot 2025-05-06 at 13.32.11.png",
+    "Computer Architecture/Notes/vonNeumann.md",
+    "Computer Architecture/Notes/VON_Neumann_Architecture.md",
+    "Talks/SISTEM 2025/quantumComputing.md",
+    "2025-05-06.md",
+    "Operating Systems/7_operating systems classificiation.md",
+    "Operating Systems/OS services.md",
+    "Operating Systems/3_operating_systems_classification.md",
+    "Operating Systems/5_UI.md",
+    "Operating Systems/4_OS1.md",
+    "Operating Systems/2_linux_file_permissions.md",
+    "Revision.md",
+    "c.c",
+    "binary.md",
+    "binary.txt",
+    "Web Dev/Main.md",
+    "microprocessors/Previous Papers/TU856-1_summer_2024_a1.pdf",
+    "Computer Technology.md",
+    "Networks/Proxy.md",
+    "Networks",
+    "semester2_combined_notes_formatted.md",
+    "semester2_combined_notes.md",
+    "app.js",
+    "Web Dev",
     "microprocessors/notes/Serial Communication.md",
+    "microprocessors/notes/STM32F031 (ARM based microcontroller).md",
     "Screenshot 2025-04-20 at 20.19.54.png",
     "Screenshot 2025-04-20 at 19.36.59.png",
-    "microprocessors/Previous Papers/TU856-1_summer_2024_a1.pdf",
     "microprocessors/notes",
     "microprocessors/intro.md",
     "programming/class notes.md",
-    "Operating Systems/3_operating_systems_classification.md",
-    "Operating Systems/4_OS1.md",
-    "Operating Systems/5_UI.md",
     "Operating Systems/6_FilePermission.md",
-    "Operating Systems/7_operating systems classificiation.md",
-    "Operating Systems/operating system.md",
-    "Operating Systems/Important.md",
-    "5_03-2025.md",
-    "README.md",
-    "Operating Systems/vim.md",
-    "Operating Systems/OS services.md",
-    "Operating Systems/2_linux_file_permissions.md",
-    "Operating Systems/1_history.md",
-    "programming/revision./Notes.code-workspace",
-    "programming/revision./word",
-    "programming/revision./hello.txt",
-    "programming/revision./wordRemover.c",
-    "programming/revision."
+    "programming/revision./Notes.code-workspace"
   ]
 }
