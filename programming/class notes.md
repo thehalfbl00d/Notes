@@ -87,7 +87,7 @@ for (int i = 0; i < 4; i++){
 allocates continuous block of memory(Bytes) and returns the starting point:
 ```c
     pointer = malloc(size);
-    free(pointer); // don't forget to free the pointer to save space
+    free(pointer); // don't forget to free the pointer to save memory
 ```
 
 ## calloc() function
@@ -295,7 +295,7 @@ array = p  // this is not ok
 char num_string[4] = "123";
 int mynum = atoi(num_string); // mynum is 123
 ```
-#### to float
+#### To float
 
 ```c
 #include <stdlib.h>
@@ -303,7 +303,6 @@ int mynum = atoi(num_string); // mynum is 123
 char num_string[4] = "123";
 int mynum = atof(num_string); // mynum os 123.0000
 ```
-
 ## Creating an array of strings 
 - this can be done by creating an array of pointers
 
@@ -379,12 +378,6 @@ for (int i = 0; i < 5; i++){
     printf("%d", ptr -> marks[i]);
 }
 ```
-
-***Only 4 weeks remaining for exams**
-
-
-Goes to the pointer and then look for id member name.
-
 ---
 ## Passing struct to a function
 
@@ -403,8 +396,8 @@ void display( struct student student1){
     //code here
 };
 ```
-#### 2. Pass By Reference
-
+	
+#### 2. Pass By Reference	
 ```C
 void enter(struct student *); // signature
 
@@ -441,4 +434,19 @@ typedef int* INT_POINTER; // replace the int* by INT_POINTER2
 ```
 
 ---
+# Files
 
+#### Commands
+
+```c
+FILE *fptr = fopen("file.txt", "a");
+char_a = fgetc(file_pointer);
+fputc(char_out, file_pointer);
+
+fgets(string_array, max_characters_to_read, file_pointer);
+fputs(string_array, file_pointer)
+seek (file_pointer, offset_no_of_bytes, SEEK_CUR/SEEK_END);
+
+```
+
+---
